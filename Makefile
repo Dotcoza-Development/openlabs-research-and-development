@@ -1,4 +1,4 @@
-.PHONY: setup setup-lms run-lms
+.PHONY: setup setup-lms run-lms run-router test-all
 
 setup:
 	@echo "Setting up monorepo environment..."
@@ -9,3 +9,9 @@ setup-lms:
 
 run-lms:
 	projects/01-lms-rag-tutor/venv/bin/python projects/01-lms-rag-tutor/app/main.py
+
+run-router:
+	python3 projects/09-multi-llm-router/app/main.py
+
+test-all:
+	@echo "Running tests across all projects..."
