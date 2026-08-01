@@ -21,55 +21,55 @@ Each system is open-source, fully documented, and designed with clean interfaces
 ## 🚀 Detailed System Descriptions
 
 ### 1. Education: RAG-Powered LMS & Tutor
-**Directory:** `projects/01-lms-rag-tutor/`
+**Directory:** `prototypes/ols-001-lms-rag-tutor/`
 **Architecture:** Enterprise Document RAG (Vector Search + Multi-Modal LLM)
 **Tech Stack:** OpenAI / Claude API, LangChain/LlamaIndex, FAISS, Streamlit
 **Description:** An educational assistant that ingests course materials (PDFs, Markdown, slide decks) into vector storage. Students can ask complex subject-matter questions, and the engine generates grounded responses with strict page/section citations. Includes guardrails against hallucinations and an automated quiz generator.
 
 ### 2. Autonomous Multi-Step Orchestration Agent
-**Directory:** `projects/02-autonomous-agent/`
+**Directory:** `prototypes/ols-002-autonomous-agent/`
 **Architecture:** State-Graph Multi-Agent System
 **Tech Stack:** LangGraph, Claude 3.5 Sonnet, Python
 **Description:** An autonomous multi-agent engine capable of executing complex end-to-end tasks without human intervention between steps. Specialized sub-agents (Research Agent, Synthesizer, Evaluator) pass state back and forth, self-correcting logic errors and validating criteria before outputting final deliverables.
 
 ### 3. Real-Time Misinformation & Fact-Checker
-**Directory:** `projects/03-fact-checker-rag/`
+**Directory:** `prototypes/ols-003-fact-checker-rag/`
 **Architecture:** Web-Augmented Retrieval Engine (Web RAG)
 **Tech Stack:** Perplexity API, Tavily Search, OpenAI API, FastAPI
 **Description:** A live verification system that accepts incoming claim text or news statements, queries active web indexes in real-time, cross-references findings across trusted news and academic sources, and returns a verified Truth Score alongside direct web citations.
 
 ### 4. Edge AI On-Device Summarizer & Classifier
-**Directory:** `projects/04-edge-ai-summarizer/`
+**Directory:** `prototypes/ols-004-edge-ai-summarizer/`
 **Architecture:** On-Device / Local Edge Inference Engine
 **Tech Stack:** Gemma 2 (via Ollama / Llama.cpp), Python, Docker
 **Description:** A lightweight, fully offline log analyzer and summarizer running on local device hardware. Ensures complete data privacy and zero API costs while categorizing high-throughput system events and generating instant executive summaries.
 
 ### 5. Multi-Cloud Automated Infrastructure Debugger
-**Directory:** `projects/05-infras-debugger/`
+**Directory:** `prototypes/ols-005-infras-debugger/`
 **Architecture:** Agentic API Integration & Log Parsing Pipeline
 **Tech Stack:** Claude Code API, Python, SQLite/PostgreSQL, AWS/GCP/Azure Log Schemas
 **Description:** Connects to centralized cloud log databases across multi-cloud infrastructure. Automatically queries recent error spikes using dynamic SQL, diagnoses root causes via LLM reasoning, and generates actionable patch code/Pull Requests for developer review.
 
 ### 6. Automated SQL Data Analyst & Visualizer
-**Directory:** `projects/06-text-to-sql-analyst/`
+**Directory:** `prototypes/ols-006-text-to-sql-analyst/`
 **Architecture:** Text-to-SQL + Structured Data Pipeline
 **Tech Stack:** OpenAI Function Calling, SQLite/DuckDB, Plotly, Pandas
 **Description:** Allows non-technical business users to ask natural-language questions about complex SQL datasets. The engine translates user intent into secure SQL queries, executes them safely in a sandboxed execution environment, and automatically renders interactive Plotly visual charts.
 
 ### 7. Structured Codebase Documentation Generator
-**Directory:** `projects/07-codebase-doc-gen/`
+**Directory:** `prototypes/ols-007-codebase-doc-gen/`
 **Architecture:** Tree-Traversal Code Analysis Engine
 **Tech Stack:** Python AST (Abstract Syntax Trees), Claude API, Markdown Tools
 **Description:** Scans repository file trees, parses code structure and class dependencies using AST, and outputs comprehensive, readable developer documentation. Automatically constructs Mermaid.js architectural diagrams, API endpoint specifications, and local deployment runbooks.
 
 ### 8. Dynamic Product Backlog & Story Engine
-**Directory:** `projects/08-agile-backlog-engine/`
+**Directory:** `prototypes/ols-008-agile-backlog-engine/`
 **Architecture:** Schema-Enforced Structured Output Engine
 **Tech Stack:** Pydantic Logics, OpenAI/Claude API, GitHub/Jira REST APIs
 **Description:** Accepts unstructured feedback notes or high-level feature ideas and translates them into formal Agile User Stories complete with Given-When-Then Acceptance Criteria. Computes WSJF (Weighted Shortest Job First) prioritization scores and pushes structured items directly into backlog tools.
 
 ### 9. Multi-LLM Routing & Fallback Gateway
-**Directory:** `projects/09-multi-llm-router/`
+**Directory:** `prototypes/ols-009-multi-llm-router/`
 **Architecture:** Unified API Gateway & Model Router
 **Tech Stack:** FastAPI, LiteLLM, OpenAI + Claude + Gemma APIs
 **Description:** A production API gateway that minimizes LLM spend and latency. Evaluates incoming prompt complexity to dynamically route simple tasks to fast/cheap models (Gemma/GPT-4o-mini) and complex reasoning prompts to frontier models (Claude 3.5 Sonnet), handling rate limits and fallbacks seamlessly.
@@ -84,8 +84,8 @@ Each system is open-source, fully documented, and designed with clean interfaces
 ### Setup Environment
 Clone the repository:
 ```bash
-git clone https://github.com/byron-dotoza-developer/openlabs-research-and-development.git
-cd ai-systems-portfolio
+git clone https://github.com/Dotcoza-Development/openlabs-research-and-development.git
+cd openlabs-research-and-development
 ```
 
 Set up environment variables:
