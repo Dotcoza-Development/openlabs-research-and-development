@@ -2,6 +2,14 @@
 
 A single self-contained HTML file: `governance-sandbox.html`. Open it directly in a browser — no build step, no server, no dependencies.
 
+## Hosting
+
+This folder is set up to deploy to **GitHub Pages** via `.github/workflows/pages.yml` — it publishes this `sandbox/` directory as a static site on every push to `main` (or manual dispatch), no build step involved. `index.html` here just redirects to `governance-sandbox.html` so the site root opens the app directly.
+
+**One-time setup** (repo admin, ~30 seconds): GitHub → this repo → **Settings → Pages → Build and deployment → Source: "GitHub Actions"**. After that, the workflow runs automatically and the URL is shown on that same Settings → Pages screen (and as the workflow's deployment URL) — typically `https://<org>.github.io/<repo>/`.
+
+Because it's fully client-side, GitHub Pages (or any static host — Netlify, Cloudflare Pages, S3, etc.) is sufficient; nothing here needs a server.
+
 It lets you define Ecosystems, Agents, Apps (archetype × ecosystem) and Labs (hypothesis + scenario), then run an app inside a lab and read a risk report mapped to the [OLS-RAF v1.0](../framework/OLS-RAF-v1.0.md) framework.
 
 ## Simulated vs. live

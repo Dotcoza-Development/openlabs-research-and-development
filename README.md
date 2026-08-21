@@ -78,6 +78,8 @@ Each system is open-source, fully documented, and designed with clean interfaces
 
 `sandbox/governance-sandbox.html` — a single self-contained HTML file (no build, no server) that lets you assemble Ecosystems, Agents, Apps and Labs and run them against the [OLS-RAF v1.0](framework/OLS-RAF-v1.0.md) risk framework. Runs fully offline in simulated mode by default; any agent can be pointed at a real Frontier (Anthropic, OpenAI, Google, DeepSeek, Kimi), Edge (Ollama) or Custom OpenAI-compatible provider from its built-in Connections view — bring your own API key, stored only in your browser. See `sandbox/README.md`.
 
+**Hosted via GitHub Pages** — a workflow at `.github/workflows/pages.yml` deploys `sandbox/` automatically on every push to `main`. One-time setup: repo Settings → Pages → Source: "GitHub Actions" (see `sandbox/README.md` for details and the resulting URL).
+
 ## 🛠️ Getting Started & Repository Usage
 
 ### Prerequisites
